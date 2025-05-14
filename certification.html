@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Certifications</title>
+    <style>
+      :root {
+        --bg-color: #121212;
+        --text-color: #ffffff;
+        --card-bg: #1e1e1e;
+        --card-text: #e0e0e0;
+        --card-subtext: #b0b0b0;
+        --shadow: rgba(0, 0, 0, 0.5);
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: var(--bg-color);
+        color: var(--text-color);
+      }
+
+      h1.title-cer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2.5rem;
+        color: var(--text-color);
+      }
+
+      .cer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .cert-card {
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px var(--shadow);
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cert-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px var(--shadow);
+      }
+
+      .cert-card a {
+        display: block;
+      }
+
+      .cert-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      .cert-info {
+        padding: 15px;
+      }
+
+      .cert-info h3 {
+        font-size: 1.1rem;
+        margin: 0 0 8px;
+        color: var(--card-text);
+      }
+
+      .cert-info p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--card-subtext);
+      }
+
+      @media (max-width: 600px) {
+        h1.title-cer {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title-cer">My Certifications</h1>
+
+    <div class="cer-container">
+      <div class="cert-card">
+        <a href="images/javascript-infosys.jpg" download>
+          <img src="images/javascript-infosys.jpg" alt="JavaScript Course" />
+        </a>
+        <div class="cert-info">
+          <h3>JavaScript</h3>
+          <p>Infosys Springboard</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/Java_SoloLearn.png" download>
+          <img src="images/Java_SoloLearn.png" alt="Java Programming" />
+        </a>
+        <div class="cert-info">
+          <h3>Programming Using Java</h3>
+          <p>Sololearn</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/c++-scalar.jpg" download>
+          <img src="images/c++-scalar.jpg" alt="C++ Course" />
+        </a>
+        <div class="cert-info">
+          <h3>C++: Learn the Essentials</h3>
+          <p>Scaler</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/mongodb-cer.jpg" download>
+          <img src="images/mongodb-cer.jpg" alt="MongoDB Course" />
+        </a>
+        <div class="cert-info">
+          <h3>MongoDB Node.js Developer Path</h3>
+          <p>MongoDB</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/excel champs.jpg" download>
+          <img src="images/excel champs.jpg" alt="Excel Course" />
+        </a>
+        <div class="cert-info">
+          <h3>Excel for Everyone</h3>
+          <p>Excel Champs</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/LinkedIn Blender.png" download>
+          <img src="images/LinkedIn Blender.png" alt="Blender Training" />
+        </a>
+        <div class="cert-info">
+          <h3>Blender 2.91 Essential Training</h3>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/LinkedIn Python.jpg" download>
+          <img src="images/LinkedIn Python.jpg" alt="Python Course" />
+        </a>
+        <div class="cert-info">
+          <h3>Level Up: Python</h3>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/LinkedIn Personal Strengths.png" download>
+          <img
+            src="images/LinkedIn Personal Strengths.png"
+            alt="Personal Strengths"
+          />
+        </a>
+        <div class="cert-info">
+          <h3>Working with Strengths & Weaknesses</h3>
+          <p>LinkedIn</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/devTown AWS.png" download>
+          <img src="images/devTown AWS.png" alt="Cloud Computing With AWS" />
+        </a>
+        <div class="cert-info">
+          <h3>Cloud Computing With AWS (BootCamp)</h3>
+          <p>DevTown</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/Nameste Node.JS.jpg" download>
+          <img src="images/Nameste Node.JS.jpg" alt="Node.JS" />
+        </a>
+        <div class="cert-info">
+          <h3>Node.JS With Express.JS and MongoDB</h3>
+          <p>NamesteDev</p>
+        </div>
+      </div>
+      
+      <div class="cert-card">
+        <a href="images/Nameste React.jpg" download>
+          <img src="images/Nameste React.jpg" alt="React JS" />
+        </a>
+        <div class="cert-info">
+          <h3>React With Tailwind CSS</h3>
+          <p>NamesteDev</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <a href="images/devtown-py.jpg" download>
+          <img src="images/devtown-py.jpg" alt="Python Course" />
+        </a>
+        <div class="cert-info">
+          <h3>Python (BootCamp)</h3>
+          <p>DevTown</p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

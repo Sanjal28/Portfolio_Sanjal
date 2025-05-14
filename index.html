@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SANJAL.S</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f6268170db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- add smooth effect for loading page  -->
+
+  <body>
+    <!-- --------loading screen------- -->
+    <div id="loading-screen">
+      <div id="loading-text">Hello</div>
+    </div>
+    <div id="content" style="display: none">
+      <div id="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <h4><i class="fa-regular fa-copyright"></i> Code by Sanjal</h4>
+            </div>
+            <!-- <img src="images/logo.jpg" alt="LOGO" class="logo"> -->
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Projects</a></li>
+              <!-- <li><a href="#profile">Profiles</a></li> -->
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <!-- <figure class="wave" style="display: none;">
+              <img src="images/sanjal_1.jpg" alt="Sanjal-img"></img>
+              <figcaption></figcaption>
+            </figure> -->
+            <div style="margin-bottom: 45px" class="arrow">↘</div>
+            <p class="heading">
+              <span>MERN STACK</span> <br />
+              DEVELOPER
+            </p>
+            <h1 class="name-home">Hi, I'm <span>Sanjal.S</span></h1>
+            <p class="college">
+              Student At Rajalakshmi Institute of Technology
+            </p>
+            <a href="images/RESUME.pdf" download class="btn2"
+              >Download Resume</a
+            >
+            <!-- social medias -->
+            <div class="social">
+              <a href="https://www.linkedin.com/in/sanjal/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Sanjal28" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://leetcode.com/u/slsanjal28/" target="_blank"
+                ><i class="fa-solid fa-terminal"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/sanjal_2.jpg" alt="About Me" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                I am S. Sanjal, currently pursuing my Bachelor's degree in
+                Computer Science and Business Systems at Rajalakshmi Institute
+                of Technology. I am passionate about software development and
+                enjoy building efficient, real-world applications.<br />
+                <span>
+                  I am skilled in programming languages such as Java,
+                  JavaScript, and C (basics). My front-end expertise includes
+                  HTML, CSS, Tailwind CSS, and React, while my back-end skills
+                  cover Node.js and Express.js. I also have hands-on experience
+                  with MongoDB for database management and a strong foundation
+                  in Data Structures and Algorithms using Java. I strive to
+                  create scalable, user-friendly solutions and am always open to
+                  learning and growing in the tech space.
+                </span>
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('certification')">
+                  Certifications
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Programming Languages:</span><br />
+                    Java, JavaScript, C++, C (Basics)
+                  </li>
+                  <li>
+                    <span>Web Development:</span><br />
+                    Front-End: HTML, CSS, Tailwind CSS, JavaScript, React,
+                    Redux<br />
+                    Back-End: Node.js, Express.js, MongoDB, Mongoose
+                  </li>
+                  <li>
+                    <span>Tools & Technologies:</span><br />
+                    Git, GitHub, Visual Studio Code, Postman
+                  </li>
+                  <li>
+                    <span>Soft Skills:</span><br />
+                    Problem-solving, Teamwork, Communication
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span
+                      >B.Tech in Computer Science And Business Systems<br />Rajalakshmi
+                      Institute Of Technology<br
+                    /></span>
+                    2022-2026<br />CGPA: 8.95 (as of 5th semester)
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>
+                      <h3>MERN Stack Developer Intern At Quibo Tech</h3></span
+                    >
+                    <p>Saidapet, Chennai | March-April 2025</p>
+                  </li>
+                  <p>
+                    I successfully completed a 2-month internship as a MERN
+                    Stack Developer at Quibo Tech, where I contributed to
+                    building a Hospital Management System from scratch. This
+                    hands-on experience allowed me to enhance my backend
+                    development skills, including designing and building RESTful
+                    APIs, managing MongoDB databases, and addressing real-time
+                    backend challenges, while also strengthening my teamwork and
+                    decision-making abilities.
+                  </p>
+                  <a href="images/sanjal.pdf" download class="btn2"
+                    >Proof Of Completion</a
+                  >
+                </ul>
+              </div>
+              <div class="tab-contents" id="certification">
+                <ul>
+                  <li>
+                    <span> C++ Certification From</span> Scalar Topics
+                    <a href="images/c++-scalar.jpg" download>
+                      <i class="fa-solid fa-download" id="downloadbtn"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <span>MongoDB Node.js Developer Path Certification From</span> MongoDB
+                    <a href="images/mongodb-cer.jpg" download>
+                      <i class="fa-solid fa-download" id="downloadbtn"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <span>JavaScript Certification From </span>Infosys
+                    Springboard
+                    <a href="images/javascript-infosys.jpg" download>
+                      <i class="fa-solid fa-download" id="downloadbtn"></i
+                    ></a>
+                  </li>
+                  <a href="certification.html" class="btn">See More</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="project">
+        <div class="container">
+          <h1 class="sub-title">Projects</h1>
+          <div class="work-list">
+            <div class="work">
+              <img
+                src="images/project_2.webp"
+                alt="DataCenters Carbon Emission App"
+              />
+              <div class="layer">
+                <h3>DataCenters Carbon Emission App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt excepturi vel voluptatibus natus a soluta, recusandae
+                  quibusdam id necessitatibus at quaerat nostrum iste nobis
+                  quod.
+                </p>
+                <a href="https://github.com/tharun182004/CarbonFootprint"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/project_2.webp" alt="Expense Tracker App" />
+              <div class="layer">
+                <h3>Expense Tracker App</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt excepturi vel voluptatibus natus a soluta, recusandae
+                  quibusdam id necessitatibus at quaerat nostrum iste nobis
+                  quod.
+                </p>
+                <a href="https://github.com/Sanjal28/Expense-tracker"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/project_2.webp" alt="Product Classifier" />
+              <div class="layer">
+                <h3>Product Classifier</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt excepturi vel voluptatibus natus a soluta, recusandae
+                  quibusdam id necessitatibus at quaerat nostrum iste nobis
+                  quod.
+                </p>
+                <a href="https://github.com/Sanjal28/Product-Classifier"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/" class="btn">See More</a>
+        </div>
+      </div>
+
+      <!-- Profiles Section -->
+      <!-- <div id="profile">
+            <div class="container">
+                <h1 class="sub-title">Profiles</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/linkedin_img.webp" alt="LinkedIn Profile">
+                        <div class="layer">
+                            <h3>LinkedIn</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi vel
+                                voluptatibus natus a soluta, recusandae quibusdam id necessitatibus at quaerat nostrum
+                                iste nobis quod.</p>
+                            <a href="https://www.linkedin.com/in/sanjal/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/github_img.png" alt="GitHub Profile">
+                        <div class="layer">
+                            <h3>GitHub</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi vel
+                                voluptatibus natus a soluta, recusandae quibusdam id necessitatibus at quaerat nostrum
+                                iste nobis quod.</p>
+                            <a href="https://github.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/leetcode_img.png" alt="LeetCode Profile">
+                        <div class="layer">
+                            <h3>LeetCode</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi vel
+                                voluptatibus natus a soluta, recusandae quibusdam id necessitatibus at quaerat nostrum
+                                iste nobis quod.</p>
+                            <a href="https://leetcode.com/u/slsanjal28/"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+      <!-- Contact Section -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <i class="fa-regular fa-paper-plane"></i
+                ><a
+                  href="mailto:slsanjal28@gmail.com"
+                  style="color: white; text-decoration: none"
+                  >slsanjal28@gmail.com
+                </a>
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i
+                ><a
+                  href="tel:+918760777778"
+                  style="color: white; text-decoration: none"
+                  >+91 8760777778</a
+                >
+              </p>
+              <p><i class="fa-solid fa-globe"></i> Chennai, Tamil Nadu</p>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Crafted With
+            <i class="fa-solid fa-heart" style="color: red"></i> Love by Sanjal
+          </p>
+        </div>
+      </div>
+
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+          for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+      </script>
+
+      <script>
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbzV2ugxi_u0bwbfGeIdnLVm0jW81vvKbL6Oh9F8BxYqJKazQZnL-Z65Ya_nzEu4B_tPQg/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+              msg.innerHTML = "Message Sent Successfully";
+              setTimeout(() => {
+                msg.innerHTML = "";
+              }, 5000);
+              form.reset();
+            })
+            .catch((error) => console.error("Error!", error.message));
+        });
+      </script>
+      <script>
+        document.addEventListener("scroll", function () {
+          var aboutSection = document.getElementById("about");
+          var scrollPosition = window.scrollY;
+
+          // Adjust the value based on when you want the effect to start
+          var startEffectAt = 300;
+
+          if (scrollPosition > startEffectAt) {
+            aboutSection.classList.add("scrolled");
+          } else {
+            aboutSection.classList.remove("scrolled");
+          }
+        });
+      </script>
+    </div>
+    <!-- ---------loading script-------->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loadingText = document.getElementById("loading-text");
+        const words = ["Hello", "வணக்கம்", "नमस्ते", "హలో", "ಹಲೋ", "ഹലോ"];
+        const wordDuration = 200; // Duration for each word in milliseconds
+
+        let currentWordIndex = 0;
+
+        function showNextWord() {
+          if (currentWordIndex < words.length) {
+            loadingText.textContent = words[currentWordIndex];
+            currentWordIndex++;
+            setTimeout(showNextWord, wordDuration);
+          } else {
+            fadeOutLoadingScreen();
+          }
+        }
+
+        function fadeOutLoadingScreen() {
+          const loadingScreen = document.getElementById("loading-screen");
+          loadingScreen.style.transition = "opacity 0.5s";
+          loadingScreen.style.opacity = "0";
+          setTimeout(() => {
+            loadingScreen.style.display = "none";
+            document.getElementById("content").style.display = "block";
+          }, 500);
+        }
+
+        showNextWord();
+      });
+    </script>
+  </body>
+</html>
